@@ -1,8 +1,8 @@
-var green = new Audio("media/green.mp3");
-var red = new Audio("media/red.mp3");
-var blue = new Audio("media/blue.mp3");
-var yellow = new Audio("media/yellow.mp3");
-var wrong = new Audio("media/wrong.mp3");
+var green = new Audio("/Simon-Game/green.mp3");
+var red = new Audio("/Simon-Game/red.mp3");
+var blue = new Audio("/Simon-Game/blue.mp3");
+var yellow = new Audio("/Simon-Game/yellow.mp3");
+var wrong = new Audio("/Simon-Game/wrong.mp3");
 var userSequence = [];
 var compSequence = [];
 
