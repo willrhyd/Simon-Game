@@ -36,15 +36,17 @@ $(".btn").click(function(event) {
 
 
     if (check(userSequence, compSequence, userSequence.length - 1) == 0) {
-      wrong.play();
+      setTimeout(function() {
+        wrong.play();
+      }, 1500);
       startOver(compSequence, userSequence);
       $("h1").text("Game Over!");
       setTimeout(function() {
         $("h1").text("Game resetting...");
-      }, 2000);
+      }, 3000);
       setTimeout(function() {
         $("h1").text("Choose a button to start");
-      }, 4000);
+      }, 5000);
     }
   }
   if (compSequence.length == userSequence.length && (check(userSequence, compSequence, j - 1) == 1) && (compSequence.length > 0)) {
@@ -70,16 +72,18 @@ $(".btn").click(function(event) {
 
   if (compSequence.length == userSequence.length && (check(userSequence, compSequence, j - 1) == 0)) {
 
-    wrong.play();
+    setTimeout(function() {
+        wrong.play();
+      }, 1500);
     startOver(compSequence, userSequence);
     alert(compSequence);
     $("h1").text("Game Over!");
     setTimeout(function() {
       $("h1").text("Game resetting...");
-    }, 2000);
+    }, 3000);
     setTimeout(function() {
       $("h1").text("Choose a button to start");
-    }, 4000);
+    }, 5000);
 
   }
 
