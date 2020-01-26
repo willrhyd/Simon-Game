@@ -36,7 +36,7 @@ $(".btn").click(function(event) {
 
 
     if (check(userSequence, compSequence, userSequence.length - 1) == 0) {
-
+      wrong.play();
       startOver(compSequence, userSequence);
       $("h1").text("Game Over!");
       setTimeout(function() {
@@ -70,7 +70,7 @@ $(".btn").click(function(event) {
 
   if (compSequence.length == userSequence.length && (check(userSequence, compSequence, j - 1) == 0)) {
 
-
+    wrong.play();
     startOver(compSequence, userSequence);
     alert(compSequence);
     $("h1").text("Game Over!");
